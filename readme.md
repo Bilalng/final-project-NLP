@@ -15,7 +15,7 @@ Reddit'ten toplanan araç arıza veri seti şunlar için kullanılabilir:
 - Metinsel açıklamalara dayalı benzer araç problemlerini tanımlama
 - Araç arıza raporlarından önemli özellikleri ve belirtileri çıkarma
 
-## 🗂️ Depo Yapısı
+## Depo Yapısı
 
 ```
 .
