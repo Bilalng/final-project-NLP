@@ -1,0 +1,17 @@
+filename,is_lemmatized,model_type,window_size,vector_size,vocabulary_size
+word2vec_stem_win2_dim100_cbow.model,False,CBOW,2,100,9418
+word2vec_stem_win2_dim300_cbow.model,False,CBOW,2,300,9418
+word2vec_lemma_win5_dim300_cbow.model,True,CBOW,5,300,11952
+word2vec_lemma_win5_dim300_sg.model,True,Skip-gram,5,300,11952
+word2vec_lemma_win5_dim100_sg.model,True,Skip-gram,5,100,11952
+word2vec_lemma_win2_dim100_sg.model,True,Skip-gram,2,100,11952
+word2vec_stem_win5_dim300_sg.model,False,Skip-gram,5,300,9418
+word2vec_stem_win5_dim100_cbow.model,False,CBOW,5,100,9418
+word2vec_stem_win2_dim100_sg.model,False,Skip-gram,2,100,9418
+word2vec_stem_win5_dim300_cbow.model,False,CBOW,5,300,9418
+word2vec_stem_win2_dim300_sg.model,False,Skip-gram,2,300,9418
+word2vec_lemma_win2_dim300_cbow.model,True,CBOW,2,300,11952
+word2vec_lemma_win2_dim100_cbow.model,True,CBOW,2,100,11952
+word2vec_lemma_win5_dim100_cbow.model,True,CBOW,5,100,11952
+word2vec_lemma_win2_dim300_sg.model,True,Skip-gram,2,300,11952
+word2vec_stem_win5_dim100_sg.model,False,Skip-gram,5,100,9418
