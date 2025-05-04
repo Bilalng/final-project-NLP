@@ -5,7 +5,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
-data_dir = os.path.join(base_dir, "..", "data", "cleaned-reduced-data-set")
+data_dir = os.path.join(base_dir, "..", "data", "tf-idf-score")
 os.makedirs(data_dir, exist_ok=True)
 
 lemmatized_path = os.path.join(data_dir, "corpus_lemmatized.csv")
