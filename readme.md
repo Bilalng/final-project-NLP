@@ -172,3 +172,59 @@ Bu görselleştirmeleri `plots/` dizininde görüntüleyebilirsiniz.
 - Köklenmiş (stemmed) ve lemmatize edilmiş veri setleri, aynı metinsel içerik üzerinde farklı perspektifler sunar.
 
 
+# RAPOR 2
+
+## Güncellenen Dosyalar ve Yeni Özellikler
+
+Bu rapor, projeye eklenen yeni dosyaları ve özellikleri açıklamaktadır.
+
+### Yeni Eklenen Dosyalar
+
+- **similarity_analysis_2.py**: Geliştirilmiş benzerlik analizi scripti
+- **plots/jaccard_matrix_18x18.png**: Tüm modeller arasındaki Jaccard benzerlik matrisini gösteren görselleştirme
+- **plots/anlamsal_degerlendirme.csv**: Modellerin anlamsal değerlendirme sonuçlarını içeren CSV dosyası
+- **plots/jaccard_matrix.csv**: Jaccard benzerlik matrisini içeren CSV dosyası
+
+### similarity_analysis_2.py Scripti
+
+Bu script, önceki similarity_analysis.py'nin geliştirilmiş bir versiyonudur ve aşağıdaki özellikleri içerir:
+
+- **Geliştirilmiş Kullanıcı Arayüzü**: Daha detaylı çıktılar ve daha iyi organize edilmiş sonuçlar
+- **Esnek Metin Arama**: Tam eşleşme bulunamadığında kelime içeren metinleri arama yeteneği
+- **Anlamsal Değerlendirme**: Benzerlik sonuçlarının anlamsal olarak değerlendirilmesi ve puanlanması
+- **Detaylı Analiz Raporları**: Model performanslarının karşılaştırmalı analizi
+- **Geliştirilmiş Görselleştirmeler**: Daha büyük ve daha okunabilir Jaccard benzerlik matrisi
+- **Sonuç Tabloları**: Anlamsal değerlendirme ve Jaccard benzerlik sonuçlarının CSV dosyalarına kaydedilmesi
+
+### Scriptin Çalıştırılması
+
+Similarity_analysis_2.py scriptini çalıştırmak için aşağıdaki adımları izleyin:
+
+1. Sanal ortamınızı etkinleştirin:
+   ```bash
+   # Windows için
+   venv\Scripts\activate
+   
+   # Unix/MacOS için
+   source venv/bin/activate
+   ```
+
+2. Scripti çalıştırın:
+   ```bash
+   python scripts/similarity_analysis_2.py
+   ```
+
+3. Varsayılan olarak script "engin" kelimesi için benzerlik analizi yapar. Farklı bir kelime için analiz yapmak isterseniz, scriptteki `input_text_lemma` ve `input_text_stem` değişkenlerini değiştirin.
+
+### Analiz Sonuçları
+
+Script çalıştırıldığında aşağıdaki sonuçlar üretilir:
+
+1. Her model için en benzer 5 metin ve benzerlik skorları
+2. Modellerin anlamsal değerlendirme puanları
+3. Tüm modeller arasındaki Jaccard benzerlik matrisi
+4. En tutarlı sonuç üreten modellerin listesi
+5. TF-IDF ve Word2Vec modellerinin karşılaştırmalı performansı
+6. Özet rapor ve en başarılı modellerin listesi
+
+Tüm sonuçlar hem konsola yazdırılır hem de `plots/` dizinine CSV dosyaları olarak kaydedilir. Jaccard benzerlik matrisi görselleştirmesi `plots/jaccard_matrix_18x18.png` dosyasına kaydedilir.
